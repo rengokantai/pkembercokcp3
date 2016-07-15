@@ -1,1 +1,8 @@
+
+{{#if showtext}}
+yes
+{{else}}
+no
+{{/if}}
+<button {{action 'toggleText'}}>{{if showtext 'hide' 'show'}}</button>
 {{yield}}
