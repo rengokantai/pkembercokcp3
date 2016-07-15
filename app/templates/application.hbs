@@ -1,6 +1,7 @@
 <h2 id="title">Test</h2>
 
 {{he-llo}}
-
-{{#link-to 'students'}}students{{/link-to}}<br>
+{{#each model as |student|}}
+{{#link-to 'students' student}}{{student.name}}{{/link-to}}<br>
+{{/each}}
 {{outlet}}

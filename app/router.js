@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('hello');
   this.route('conditional');
   this.route('student');
-  this.route('students');
+  this.route('students',{path:'/students/:student_id'});
 });
 
 export default Router;
